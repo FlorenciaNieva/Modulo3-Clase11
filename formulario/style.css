@@ -1,0 +1,13 @@
+.imagen-fondo {
+    background-image: url('https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFpc2FqZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+
+}

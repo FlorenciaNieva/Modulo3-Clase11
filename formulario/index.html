@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="imagen-fondo"></div>
+            <h3 class="title has-text-centered mt-6">Formulario de Registro</h3>
+            <form class="form">
+                <div class="columns is-multiline">
+                        <div class="field column is-6">
+                            <label class="label">Nombre</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ingrese su nombre" id="nameInput"/>
+                            </div>
+                        </div>
+                        <div class="field column is-6">
+                            <label class="label">Apellido</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ingrese su apellido" id="lastNameInput"/>
+                            </div>
+                        </div>
+                        <div class="field column is-6">
+                            <label class="label">Fecha de cumpleaños</label>
+                            <div class="control">
+                                <input class="input" type="date" id="birthDate"/>
+                            </div>
+                        </div>
+                        <div class="field column is-6">
+                            <label class="label">Curso</label>
+                            <div class="select is-fullwidth">
+                                <select id="select"></select>
+                            </div>
+                        </div>
+                </div>
+                <div class="is-flex is-justify-content-flex-end">
+                    <!-- Botón de eliminar curso -->
+                    <button type='button' class="button is-rounded is-info mr-4" id="deleteBtn">Eliminar Curso</button>
+                    <!-- Botón de agregar curso -->
+                    <button type="button" class="button is-rounded is-info" id="addBtn">Agregar curso</button>
+                </div>
+                <div class="is-flex is-justify-content-center">
+                    <input type="reset" class="button is-rounded is-danger mr-4">
+                    <input type="submit" class="button is-rounded is-primary">
+                </div>
+                
+            </form>
+            <!-- Modal de agregar curso -->
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content box">
+                    <form>
+                        <div class="field">
+                            <label class="label">Nombre del Curso</label>
+                            <div class="control">
+                                <input id="courseName" class="input" type="text" placeholder="Ingrese el nombre del curso" />
+                            </div>
+                        </div>
+                        <button id="addCourse" type="button" class="button is-success is-rounded"> Agregar </button>
+                    </form>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
